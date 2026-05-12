@@ -32,7 +32,7 @@ export default function handler(req, res) {
     const payload = req.body;
 
     // Verifica se o payload tem a estrutura exata que você pediu
-    if (payload.action === 'put' && payload.message && payload.author) {
+    if (payload.action === 'post' && payload.message && payload.author) {
       
       // Cria a data no formato DD/MM/YYYY HH:MM:SS
       const dataFormatada = new Date().toLocaleString('pt-BR', { timeZone: 'America/Bahia' });
